@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hellow Rapunzel Solow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('WhatsApp Image 2024-10-24 at 15.14.17.jpeg'); /* Gambar latar belakang */
+      background-size: cover; /* Menutupi seluruh halaman */
+      background-position: center; /* Posisi gambar di tengah */
+      background-repeat: no-repeat; /* Gambar tidak diulang */
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header img {
+      height: 150px; /* Memperbesar logo Netflix */
+    }
+
+    .content {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7); /* Menambahkan latar belakang transparan di bagian konten */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .explore-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .explore-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .button {
+      background-color: #e50914;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Bagian Header dengan logo Netflix -->
+  <div class="header">
+    <img src="netflix-logo.png.jpeg" alt="Netflix Logo"> 
+  </div>
+
+  <!-- Bagian Konten Utama -->
+  <div class="content" id="main-content">
+    <h1>How to say I'm sorry for what I did before I disappear back into the crowd.</h1>
+    <img src="tata. jpg.jpeg" alt="Tabhita">
+    <p>This is how Hasan, someone who mungkin belum bisa bicara langsung ke kamu tentang perasaanya, bcs gengsi tembok cina masih tinggi hehe. From a distance, I’ve always wanted to talk to you and tell you how much I admire you and how happy I am to know you. But for now, this is how I say that I really want to always be close to you, Tabhita Zahra Madanie.</p>
+    <button class="button" onclick="showNewContent()">Play</button>
+    <div class="button">More Info</div>
+  </div>
+
+  <!-- Bagian Explore untuk Foto Lainnya -->
+  <div class="explore-section">
+    <img src="photo1. jpg.jpeg" alt="Photo 1">
+    <img src="photo2. jpg.jpeg" alt="Photo 2">
+    <img src="photo3. jpg.jpeg" alt="Photo 3">
+    <img src="photo4. jpg.jpeg" alt="Photo 4">
+    <img src="photo5. jpg.jpeg" alt="Photo 5">
+    <img src="photo6. jpg.jpeg" alt="Photo 6">
+  </div>
+</div>
+
+<script>
+  // Fungsi untuk menampilkan konten baru saat tombol "Play" ditekan
+  function showNewContent() {
+    var content = document.getElementById("main-content");
+    
+    // Menyimpan konten asli ke dalam variabel untuk digunakan kembali
+    window.originalContent = content.innerHTML;
+
+    // Mengganti isi HTML dengan konten baru
+    content.innerHTML = `
+      <h1>halooo gacor cewe badayyy</h1>
+      <img src="photo7.jpg.jpeg" alt="photo 7" width="300">
+      <p>Hi,aku cuman mau minta maaf atas pikiran aku yg jelek yang buat kamu sedih aku udh bilang itu semalem jd gausa panjang", soooo aku maw invited kamu untukk kita bertemuu mam eskrim dan besokk mantaiii soo cool kan neng hehe kita harus seru seru keyyy!</p>
+      <p>With all love for u,<br>cowo bergaya fuck</p>
+      <button class="button" onclick="goBack()">Back</button>
+    `;
+  }
+
+  // Fungsi untuk mengembalikan ke konten asli
+  function goBack() {
+    var content = document.getElementById("main-content");
+    
+    // Mengembalikan konten asli yang disimpan sebelumnya
+    if (window.originalContent) {
+      content.innerHTML = window.originalContent;
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
